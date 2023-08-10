@@ -1,0 +1,90 @@
+.project {
+    background-color: #2d2d39;
+}
+
+.project-container {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+}
+
+.demo-container {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.project-container .box {
+    width: 580px;
+    height: 400px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 5s;
+    border: 8px solid #01be96;
+    border-radius: 10px;
+}
+
+.project-container .box1 {
+    background-image: url(../../assest/auto-car.png);
+    background-size: cover;
+}
+
+.project-container .box2 {
+    background-image: url(../../assest/chef-recepe.png);
+    background-size: cover;
+}
+
+.project-container .box3 {
+    background-image: url(../../assest/summer-camp.png);
+    background-size: cover;
+}
+
+.project-container .box:hover {
+    background-position: bottom;
+}
+
+.project-title {
+    max-width: 460px;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.pro-title {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 586px) {
+    .project-container {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .demo-container {
+        display: none;
+    }
+
+    .project-container .box {
+        width: 100%;
+    }
+
+    .my-image {
+        width: 0px;
+    }
+
+    .project-title {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
